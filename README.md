@@ -6,9 +6,9 @@ https://docs.oracle.com/javase/9/migrate/toc.htm#JSMIG-GUID-F640FA9D-FB66-4D85-A
 Gradle > 4.3
 
 MySql > 5.5
-Port = 3306
-username = root
-password = root
+  -Port = 3306
+  -username = root
+  -password = root
 
 To run application:
   1. Set up MySQL
