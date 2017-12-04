@@ -49,24 +49,4 @@ public class TransactionServiceImpl implements TransactionService {
     public List<Transaction> findByDateOfTransaction(Date from, Date to) {
         return transactionRepo.findByDateOfTransaction(from, to);
     }
-
-    @Override
-    public List<Transaction> findByDateOfTransactionBefore(Timestamp dateOfTransaction) {
-        return transactionRepo.findByDateOfTransactionBefore(dateOfTransaction);
-    }
-
-    @Override
-    public List<Transaction> findByDateOfTransactionAfter(Timestamp dateOfTransaction) {
-        return transactionRepo.findByDateOfTransactionAfter(dateOfTransaction);
-    }
-
-    @Override
-    public List<Transaction> findByDateFrom(Date from) {
-        return transactionRepo.findByDateFrom(from);
-    }
-
-    @Override
-    public List<Transaction> findByDateTo(Date to) {
-        return transactionRepo.findByDateTo(to);
-    }
 }

@@ -23,11 +23,4 @@ public interface TransactionService {
 
     List<Transaction> findByDateOfTransaction(Date from, Date to);
 
-    List<Transaction> findByDateOfTransactionBefore(Timestamp dateOfTransaction);
-
-    List<Transaction> findByDateOfTransactionAfter(Timestamp dateOfTransaction);
-
-    List<Transaction> findByDateFrom(Date from);
-
-    List<Transaction> findByDateTo(Date to);
 }

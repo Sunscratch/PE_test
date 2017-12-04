@@ -32,12 +32,6 @@ public class TransactionController {
         if (from != null && to != null) {
             List<Transaction> transactions = transactionService.findByDateOfTransaction(from, to);
             model.addAttribute("transactions", transactions);
-        } else if (from != null && to == null) {
-            List<Transaction> transactions = transactionService.findByDateFrom(from);
-            model.addAttribute("transactions", transactions);
-        } else if (from == null && to != null) {
-            List<Transaction> transactions = transactionService.findByDateTo(to);
-            model.addAttribute("transactions", transactions);
         }
         return "Transactions";
     }

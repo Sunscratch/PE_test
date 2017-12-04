@@ -30,13 +30,4 @@ public interface TransactionRepo extends JpaRepository<Transaction, Long> {
     @Query(value = "SELECT * FROM TRANSACTIONS WHERE DATE(DATE) BETWEEN ?1 and ?2",nativeQuery = true)
     List<Transaction> findByDateOfTransaction(Date from, Date to);
 
-    @Query(value = "SELECT * FROM TRANSACTIONS WHERE DATE(DATE) >= ?1",nativeQuery = true)
-    List<Transaction> findByDateFrom(Date from);
-
-    @Query(value = "SELECT * FROM TRANSACTIONS WHERE DATE(DATE) >= ?1",nativeQuery = true)
-    List<Transaction> findByDateTo(Date to);
-
-    List<Transaction> findByDateOfTransactionBefore(Timestamp dateOfTransaction);
-
-    List<Transaction> findByDateOfTransactionAfter(Timestamp dateOfTransaction);
 }
