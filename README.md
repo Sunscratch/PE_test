@@ -1,11 +1,11 @@
 # PE_test
 
-Java version - 1.8 (Pls note there is a problem with Java 9 due to some modules are not resolved by default)
+1.Java version - 1.8 (Pls note there is a problem with Java 9 due to some modules are not resolved by default)
 https://docs.oracle.com/javase/9/migrate/toc.htm#JSMIG-GUID-F640FA9D-FB66-4D85-AD2B-D931174C09A3
 
-Gradle > 4.3
+2.Gradle > 4.3
 
-MySql > 5.5
+3.MySql > 5.5
   -Port = 3306
   -username = root
   -password = root
