@@ -12,7 +12,7 @@ password = root
 
 To run application:
   1. Set up MySQL
-    - add to application.properties port, username and password
+    - Check application.properties port, username and password
     - create database(DB dump PE_test/src/main/resources/)
   2. start application using bootrun
   3. Enter URL http://localhost:8080/clients
