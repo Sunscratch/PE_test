@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @Controller
@@ -32,8 +33,11 @@ public class ClientController implements ErrorController{
     @RequestMapping(value = "/clients", method = RequestMethod.GET)
     public String showClients(Model model) {
         List<Client> clientsList = clientService.findAll();
+        BigDecimal total = new BigDecimal(0);
         model.addAttribute("clients", clientsList);
         model.addAttribute("client", new Client());
+        model.addAttribute("total", total);
+        model.addAttribute("clientModel", clientModel);
         return "Clients";
     }
 

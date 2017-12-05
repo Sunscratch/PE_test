@@ -14,6 +14,7 @@
                     <th>Last Name</th>
                     <th>Date od birth</th>
                     <th>Id Number</th>
+                    <th>Total</th>
                 </tr>
             </thead>
             <tbody>
@@ -26,6 +27,7 @@
                     </td>
                     <td th:text="${client.getDob()}">...</td>
                     <td th:text="${client.getIdCard()}">...</td>
+                    <td th:text="${clientModel.getTotal(client)}">...</td>
                 </tr>
             </tbody>
         </table>

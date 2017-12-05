@@ -1,6 +1,7 @@
 package com.test.webbank.entity;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 import java.sql.Date;
 
 @Entity
@@ -23,6 +24,8 @@ public class Client {
 
     @Column(name = "id_card")
     private long idCard;
+
+    private transient BigDecimal totalAssets;
 
     public Client() {}
 
