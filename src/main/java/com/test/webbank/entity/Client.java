@@ -25,8 +25,6 @@ public class Client {
     @Column(name = "id_card")
     private long idCard;
 
-    private transient BigDecimal totalAssets;
-
     public Client() {}
 
     public Client(String firstName, String lastName, Date dob, long idCard) {
